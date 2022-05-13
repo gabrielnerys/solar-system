@@ -8,7 +8,7 @@ Esse projeto foi criado com a intenção de apresentar uma forma interativa de e
   - [Sobre a interface](#sobre-a-interface)
   - [Screenshot](#screenshot)
   - [Links](#links)
-- [Meu process](#meu-processo)
+- [Meu processo](#meu-processo)
   - [Ferramentas e linguagens](#ferramentas-e-linguagens)
   - [O que aprendi](#o-que-aprendi)
   - [Desenvolvimento continuo](#desenvolvimento-continuo)
@@ -89,11 +89,11 @@ class Missions extends Component {
 
 Algumas modificações planejadas para o projeto estão em andamento, entre elas estão:
 
-- Alteração no layout permitindo a visualização de 3 planetas por vez com o central em destaque.
+- Alteração no layout permitindo a visualização de 3 planetas por vez, sendo um central em destaque.
 - Ao clicar no elemento desejado, o usuário terá informações detalhadas sobre planetas e missões em um card, contendo descrições, imagens e links.
 
 ## Autor
 
 - Website - [Gabriel Nery](https://gabrielnerys.github.io/)
-- Instagram - [@yourusername](https://www.instagram.com/gabe.nery/)
-- Twitter - [@yourusername](https://www.twitter.com/gabenerys)
+- Instagram - [@gabe.nery](https://www.instagram.com/gabe.nery/)
+- Twitter - [@gabenerys](https://www.twitter.com/gabenerys)
