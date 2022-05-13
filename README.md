@@ -46,6 +46,8 @@ O usuário pode ser capaz de:
 
 O projeto Solar System foi inteiramente criado aplicando o conhecimento sobre React adquirido. Como o projeto foi criado a alguns meses, o conhecimento de React e o conceito de utilizar HTML junto com Javascript pra mim ainda era muio recente então posso dizer que sinto muito orgulho das primeiras linhas de JSX que escrevi.
 
+##### Primeiro Trecho
+
 ```JSX - Primeiro Trecho
 import React, { Component } from 'react';
 
@@ -61,6 +63,7 @@ class Header extends Component {
 
 export default Header;
 ```
+##### Escopo que renderiza missões
 
 ```JSX - Escopo que renderiza missões
 class Missions extends Component {
