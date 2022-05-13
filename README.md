@@ -1,70 +1,100 @@
-# Getting Started with Create React App
+# Solar System - Enciclopédia de Missões
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Esse projeto foi criado com a intenção de apresentar uma forma interativa de exibir informações sobre os planetas do sistema solar e sobre missões realizadas ao longo da história. 
 
-## Available Scripts
+## Table of contents
 
-In the project directory, you can run:
+- [Overview](#overview)
+  - [Sobre a interface](#sobre-a-interface)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+- [Meu process](#meu-processo)
+  - [Ferramentas e linguagens](#ferramentas-e-linguagens)
+  - [O que aprendi](#o-que-aprendi)
+  - [Desenvolvimento continuo](#desenvolvimento-continuo)
+- [Autor](#autor)
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Overview
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Sobre a interface
 
-### `npm test`
+O usuário pode ser capaz de:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Visualizar o layout de forma otimizada conforme a resolução da tela do dispositivo que estiver utilizando.
+- Visualizar alterações visuais ao interagir com elementos da página.
+- Obter informações sobre planetas e missões ao clicar no elemento desejado.
 
-### `npm run build`
+### Screenshot
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+![](./src/images/solar_system.jpeg)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Links
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Live Site URL: [Solar System](https://gabrielnerys.github.io/solar-system/)
+- Live Site URL: [Solar System](https://gabrielnerys.github.io/solar-system/)
 
-### `npm run eject`
+## Meu processo
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Ferramentas e linguagens
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- HTML5
+- CSS 3
+- JavaScript
+- [React](https://reactjs.org/) - JS library
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### O que aprendi
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+O projeto Solar System foi inteiramente criado aplicando o conhecimento sobre React adquirido. Como o projeto foi criado a alguns meses, o conhecimento de React e o conceito de utilizar HTML junto com Javascript pra mim ainda era muio recente então posso dizer que sinto muito orgulho das primeiras linhas de JSX que escrevi.
 
-## Learn More
+```JSX - Primeiro Trecho
+import React, { Component } from 'react';
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+class Header extends Component {
+  render() {
+    return (
+      <header>
+        <h1>Sistema Solar</h1>
+      </header>
+    );
+  }
+}
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+export default Header;
+```
 
-### Code Splitting
+```JSX - Escopo que renderiza missões
+class Missions extends Component {
+  render() {
+    return (
+      <>
+        <Title headline="Missões" />
+        <div data-testid="missions" className="missions">
+          {missions.map(({ name, year, country, destination }) => (
+            <MissionCard
+              key={ name }
+              name={ name }
+              year={ year }
+              country={ country }
+              destination={ destination }
+            />
+          ))}
+        </div>
+      </>
+    );
+  }
+}
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### Desenvolvimento continuo
 
-### Analyzing the Bundle Size
+Algumas modificações planejadas para o projeto estão em andamento, entre elas estão:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- Alteração no layout permitindo a visualização de 3 planetas por vez com o central em destaque.
+- Ao clicar no elemento desejado, o usuário terá informações detalhadas sobre planetas e missões em um card, contendo descrições, imagens e links.
 
-### Making a Progressive Web App
+## Autor
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Website - [Gabriel Nery](https://gabrielnerys.github.io/)
+- Instagram - [@yourusername](https://www.instagram.com/gabe.nery/)
+- Twitter - [@yourusername](https://www.twitter.com/gabenerys)

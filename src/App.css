@@ -1,38 +1,69 @@
+body {
+  background-image: url('./images/background.png');
+  color: white;
+}
+
+header {
+  text-align: center;
+}
+
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.title {
+  text-align: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.planets {
+  align-content: space-around;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-wrap: wrap;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  text-align: center;
 }
 
-.App-link {
-  color: #61dafb;
+.planets img {
+  transition: 0.2s ease-in;
+  width: 150px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.planets img:hover {
+  transition: 0.2s ease-in;
+  width: 170px;
+}
+
+.missions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.missions div {
+  backdrop-filter: blur(2px) saturate(200%);
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  margin: 10px;
+  min-width: 20%;
+  padding: 10px;
+}
+
+@media screen and ( max-width : 640px ) {
+
+  .planets {
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
   }
-  to {
-    transform: rotate(360deg);
+
+  .missions div {
+    backdrop-filter: blur(2px) saturate(200%);
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    margin: 10px;
+    min-width: 70%;
+    padding: 10px;
   }
 }
