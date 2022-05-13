@@ -2,7 +2,7 @@
 
 Esse projeto foi criado com a intenção de apresentar uma forma interativa de exibir informações sobre os planetas do sistema solar e sobre missões realizadas ao longo da história. 
 
-## Table of contents
+## Sobre o Projeto
 
 - [Overview](#overview)
   - [Sobre a interface](#sobre-a-interface)
