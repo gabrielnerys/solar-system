@@ -31,8 +31,7 @@ O usuário pode ser capaz de:
 
 ### Links
 
-- Live Site URL: [Solar System](https://gabrielnerys.github.io/solar-system/)
-- Live Site URL: [Solar System](https://gabrielnerys.github.io/solar-system/)
+- Live Site URL: [Solar System](https://solar-system-mu.vercel.app/)
 
 ## Meu processo
 
